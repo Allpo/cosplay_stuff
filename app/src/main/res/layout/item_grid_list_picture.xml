@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<allpo.cosplaystuff.helpers.customComponent.SquareRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shadow_bottom">
+
+    <ImageView
+        android:id="@+id/picture_gallery_item_default"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/grid_list_element_name"
+        android:background="@color/white"
+        android:src="@drawable/cs_cerberus"/>
+
+    <ImageView
+        android:id="@+id/picture_gallery_item_picture"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/grid_list_element_name"
+        android:background="@color/white"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/picture_gallery_item_delete"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_action_cancel"
+        android:background="@color/black_80" />
+
+</allpo.cosplaystuff.helpers.customComponent.SquareRelativeLayout>

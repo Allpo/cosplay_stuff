@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="allpo.cosplay_stuffv2">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:name=".application.CosplayStuffApplication"
+        android:allowBackup="true"
+        tools:replace="android:icon"
+        android:icon="@drawable/logo_cs_v1"
+        android:label="@string/app_name"
+        android:theme="@style/CosplayStuffTheme" >
+
+        <!-- Sugar ORM -->
+        <meta-data android:name="DATABASE" android:value="cosplay_stuff.db" />
+        <meta-data android:name="VERSION" android:value="1" />
+        <meta-data android:name="QUERY_LOG" android:value="false" />
+        <meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="allpo.cosplay_stuffv2.models" />
+
+        <activity
+            android:name=".activities.HomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/CosplayStuffTheme"
+            android:screenOrientation="sensorPortrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.ProjectActivity"
+            android:theme="@style/CosplayStuffTheme"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:screenOrientation="sensorPortrait"/>
+
+        <activity android:name=".activities.GalleryActivity"
+            android:theme="@style/CosplayStuffTheme"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+    </application>
+
+</manifest>

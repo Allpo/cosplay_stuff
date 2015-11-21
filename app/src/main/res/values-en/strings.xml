@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Global -->
+    <string name="app_name">Cosplay Stuff</string>
+
+    <!-- Drawer -->
+    <string name="drawer_open">drawer open</string>
+    <string name="drawer_close">drawer close</string>
+    <string name="project_list_add_project">New project</string>
+    <string name="edit_project_name_edit">Project Name</string>
+    <string name="edit_project_add_button">Create Project !</string>
+    <string name="edit_project_save_button">Save the project</string>
+    <string name="edit_project_add_picture_title">Chose of picture from :</string>
+    <string name="edit_project_add_picture_gallery">Gallery</string>
+    <string name="edit_project_add_picture_camera">Camera</string>
+
+
+</resources>

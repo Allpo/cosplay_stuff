@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/dialog_part_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="@string/dialog_cosplay_part_title_hint"
+        android:padding="@dimen/default_space"/>
+
+    <LinearLayout
+        android:id="@+id/dialog_part_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/dialog_part_title">
+
+        <Switch
+            android:id="@+id/dialog_part_toggle"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dialog_part_switch_height"
+            android:layout_weight="45"
+            android:padding="@dimen/default_space"
+            android:textOn="@string/dialog_craft"
+            android:textOff="@string/dialog_buy"
+            android:thumb="@color/main_purple_light"
+            android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/dialog_part_price_time"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dialog_part_switch_height"
+            android:layout_weight="45"
+            android:hint=""
+            android:padding="@dimen/default_space"
+            android:gravity="center"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/dialog_part_currency"
+            android:layout_width="0dp"
+            android:layout_weight="10"
+            android:gravity="center"
+            android:layout_height="@dimen/dialog_part_switch_height" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/dialog_part_description"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_part_description_height"
+        android:layout_below="@+id/dialog_part_type"
+        android:hint="@string/dialog_description_hint"
+        android:background="@null"
+        android:padding="@dimen/default_space"/>
+
+    <Button
+        android:id="@+id/dialog_part_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/dialog_part_description"
+        android:background="@null"
+        android:text="@string/dialog_part_save"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/dialog_part_dismiss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/dialog_part_save"
+        android:layout_below="@+id/dialog_part_description"
+        android:background="@color/transparent"
+        android:text="@string/dialog_part_dismiss"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/dialog_part_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/dialog_part_dismiss"
+        android:layout_below="@+id/dialog_part_description"
+        android:background="@color/transparent"
+        android:text="@string/dialog_part_delete"
+        android:textColor="@color/white"/>
+
+</RelativeLayout>

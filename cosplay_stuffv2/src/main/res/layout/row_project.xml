@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/row_project"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/row_project_size"
+    android:background="@color/main_purple"
+    android:padding="@dimen/default_space">
+
+    <ImageView
+        android:id="@+id/row_project_picture"
+        android:layout_width="@dimen/row_project_image_size"
+        android:layout_height="@dimen/row_project_image_size"
+        android:layout_centerVertical="true"
+        tools:src="@drawable/ic_picture_placeholder" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/row_project_picture"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/default_space">
+
+        <TextView
+            android:id="@+id/row_project_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            tools:text="Project name" />
+
+        <TextView
+            android:id="@+id/row_project_character"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            tools:text="Character name" />
+
+        <TextView
+            android:id="@+id/row_project_serie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            tools:text="Serie name" />
+
+    </LinearLayout>
+
+</RelativeLayout>

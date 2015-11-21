@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- General -->
+    <color name="main_purple">#ff35175b</color>
+    <color name="main_purple_light">#ff55188b</color>
+    <color name="main_purple_dark">#ff1c0722</color>
+    <color name="main_background_activity">@color/main_purple_dark</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- Row part -->
+    <color name="row_part_uncheck">#595959</color>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<allpo.cosplaystuff.helpers.customComponent.SquareRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shadow_bottom">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/grid_list_element_default"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/grid_list_element_name"
+            android:background="@color/white"
+            android:src="@drawable/cs_cerberus"/>
+
+        <ImageView
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/grid_list_element_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/grid_list_element_name"
+            android:background="@color/white"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="5dp"/>
+
+        <allpo.cosplaystuff.helpers.customComponent.CSTextView
+            android:id="@+id/grid_list_element_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Content"
+            android:gravity="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_medium"/>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/grid_list_element_delete"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_action_cancel"
+        android:background="@color/black_80" />
+
+</allpo.cosplaystuff.helpers.customComponent.SquareRelativeLayout>

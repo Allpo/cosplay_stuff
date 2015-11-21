@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="@dimen/external_half_half_margin"
+    android:background="@drawable/white_background_dark_border">
+
+    <ImageView
+        android:id="@+id/check_item_handler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_drag"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/external_half_margin"
+        />
+
+    <TextView
+        android:id="@+id/check_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/check_item_check_box"
+        android:layout_toRightOf="@+id/check_item_handler"
+        android:textSize="@dimen/text_size_xlarge"
+        android:textColor="@color/black"
+        android:padding="@dimen/external_half_margin"/>
+
+    <CheckBox
+        android:id="@+id/check_item_check_box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/external_half_margin"
+        android:clickable="false"
+        android:scaleY="1.5"
+        android:scaleX="1.5"/>
+
+</RelativeLayout>

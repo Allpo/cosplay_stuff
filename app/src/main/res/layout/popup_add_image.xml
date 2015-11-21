@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent">
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/external_half_margin"
+        android:background="@color/transparent">
+
+        <allpo.cosplaystuff.helpers.customComponent.CSTextView
+            android:id="@+id/popup_add_image_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/external_half_margin"
+            android:layout_alignParentTop="true"
+            android:text="@string/edit_project_add_picture_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_medium"
+            android:layout_marginBottom="@dimen/external_half_margin"/>
+
+        <LinearLayout
+            android:id="@+id/popup_add_image_add_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/popup_add_image_title"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true">
+
+            <!-- Camera -->
+            <ImageView
+                android:id="@+id/popup_add_camera_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cs_camera"
+                android:padding="@dimen/external_margin"
+                android:layout_marginRight="@dimen/external_margin"
+                android:scaleY="1.5"
+                android:scaleX="1.5"
+                android:clickable="true"/>
+
+            <!-- Gallery -->
+            <ImageView
+                android:id="@+id/popup_add_gallery_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cs_gallery"
+                android:padding="@dimen/external_margin"
+                android:layout_marginLeft="@dimen/external_margin"
+                android:scaleY="1.5"
+                android:scaleX="1.5"
+                android:clickable="true"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="materialviewpager-1.0.5">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/cosplay_stuffv2/build/intermediates/exploded-aar/com.github.florent37/materialviewpager/1.0.5/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/cosplay_stuffv2/build/intermediates/exploded-aar/com.github.florent37/materialviewpager/1.0.5/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/cosplay_stuffv2/build/intermediates/exploded-aar/com.github.florent37/materialviewpager/1.0.5/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.florent37/materialviewpager/1.0.5/794f91875c639ffd4ee14375fa90a4441568b62/materialviewpager-1.0.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

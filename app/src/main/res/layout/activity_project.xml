@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/grey_background">
+
+        <!-- Content -->
+        <LinearLayout
+            android:id="@+id/fragment_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="100">
+            <!-- Header image -->
+            <RelativeLayout
+                android:id="@+id/edit_project_header_container"
+                android:clickable="true"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerInParent="true"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/cs_camera"
+                        android:scaleType="center"
+                        android:padding="@dimen/external_margin" />
+
+                    <allpo.cosplaystuff.helpers.customComponent.CSTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/edit_project_add_image_title"
+                        android:textSize="@dimen/text_size_medium" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/cs_gallery"
+                        android:scaleType="center"
+                        android:padding="@dimen/external_margin" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/edit_project_header_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/default_pic"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+
+            <!-- Rest of the interface -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="80">
+
+                <!-- Name of the project -->
+                <EditText
+                    android:id="@+id/edit_project_name"
+                    android:layout_width="match_parent"
+                    android:hint="@string/edit_project_name_edit"
+                    android:layout_alignParentTop="true"
+                    android:singleLine="true"
+                    style="@style/EditTextFullExpand"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/edit_project_name"
+                    android:orientation="horizontal"
+                    android:weightSum="90">
+
+                    <allpo.cosplaystuff.helpers.customComponent.SquareRelativeLayout
+                        android:id="@+id/edit_project_ref_button"
+                        android:layout_width="0dp"
+                        android:layout_weight="30"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/external_half_margin">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/cs_ref"/>
+                        <allpo.cosplaystuff.helpers.customComponent.CSTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center"
+                            android:text="@string/project_ref_button"
+                            android:background="@color/black_50"
+                            android:textColor="@color/white"
+                            android:padding="@dimen/external_half_half_margin"/>
+                    </allpo.cosplaystuff.helpers.customComponent.SquareRelativeLayout>
+
+                    <allpo.cosplaystuff.helpers.customComponent.SquareRelativeLayout
+                        android:id="@+id/edit_project_wip_button"
+                        android:layout_width="0dp"
+                        android:layout_weight="30"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/external_half_margin">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/cs_pics"/>
+                        <allpo.cosplaystuff.helpers.customComponent.CSTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center"
+                            android:text="@string/project_wip_button"
+                            android:background="@color/black_50"
+                            android:textColor="@color/white"
+                            android:padding="@dimen/external_half_half_margin"/>
+                    </allpo.cosplaystuff.helpers.customComponent.SquareRelativeLayout>
+                    <allpo.cosplaystuff.helpers.customComponent.SquareRelativeLayout
+                        android:id="@+id/edit_project_check_button"
+                        android:layout_width="0dp"
+                        android:layout_weight="30"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/external_half_margin">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/cs_check"/>
+                        <allpo.cosplaystuff.helpers.customComponent.CSTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:gravity="center"
+                            android:text="@string/project_check_list_button"
+                            android:background="@color/black_50"
+                            android:textColor="@color/white"
+                            android:padding="@dimen/external_half_half_margin"/>
+                    </allpo.cosplaystuff.helpers.customComponent.SquareRelativeLayout>
+                </LinearLayout>
+
+                <!-- Validation -->
+                <Button
+                    android:id="@+id/edit_project_save_project"
+                    android:layout_width="match_parent"
+                    android:text="@string/edit_project_save_button"
+                    android:layout_alignParentBottom="true"
+                    style="@style/BottomButtonFullExpand" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/activity_drawer"
+        android:layout_width="170dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:background="#111"></ListView>
+
+    <RelativeLayout
+        android:id="@+id/activity_loader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:indeterminateBehavior="cycle"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+</android.support.v4.widget.DrawerLayout>

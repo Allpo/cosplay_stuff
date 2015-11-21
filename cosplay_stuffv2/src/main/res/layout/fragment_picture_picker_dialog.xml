@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/default_space">
+
+    <LinearLayout
+        android:id="@+id/picture_picker_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="@dimen/default_space">
+
+        <LinearLayout
+            android:id="@+id/picture_picker_gallery"
+            android:layout_width="@dimen/picture_picker_item_width"
+            android:layout_height="@dimen/picture_picker_item_height"
+            android:layout_marginRight="@dimen/default_space_x2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_gallery" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/picture_picker_gallery_title" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/picture_picker_camera"
+            android:layout_width="@dimen/picture_picker_item_width"
+            android:layout_height="@dimen/picture_picker_item_height"
+            android:layout_marginLeft="@dimen/default_space_x2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_image_camera" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/picture_picker_camera_title" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

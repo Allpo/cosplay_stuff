@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Global -->
+    <string name="app_name">Cosplay Stuff</string>
+    <string name="default_font">roboto_light.ttf</string>
+
+    <!-- Image Storage -->
+    <string name="image_directory_name">cosplay_stuff_images</string>
+
+    <!-- Drawer -->
+    <string name="drawer_open">menu ouvert</string>
+    <string name="drawer_close">menu fermé</string>
+
+    <!-- Project list -->
+    <string name="project_list_add_project">Nouveau projet</string>
+
+    <!-- Edit project -->
+    <string name="edit_project_name_edit">Nom du projet</string>
+    <string name="edit_project_save_button">Sauver le projet</string>
+    <string name="edit_project_add_picture_title">Choisir une image depuis :</string>
+    <string name="edit_project_add_picture_gallery">La gallerie</string>
+    <string name="edit_project_add_picture_camera">L\'appareil photo</string>
+    <string name="edit_project_add_image_title">Ajouter une bannière</string>
+    <string name="popup_add_image_or_check_gallery_view_gallery_title">Afficher la gallerie</string>
+    <string name="picture_gallery_add_image_text">Ajouter une image</string>
+    <string name="project_check_list_button">Check list</string>
+    <string name="project_wip_button">WIP</string>
+    <string name="project_ref_button">Référence</string>
+    <string name="menu_check_add_title">Ajouter un élément</string>
+
+</resources>

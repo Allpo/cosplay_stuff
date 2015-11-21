@@ -1,0 +1,52 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:homeAsUpIndicator">@drawable/ic_drawer_white</item>
+        <item name="android:actionBarStyle">@style/CSActionBarTheme</item>
+    </style>
+
+    <style name="CSActionBarTheme" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/default_primary</item>
+    </style>
+
+    <style name="EditTextFullExpand">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/default_primary</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:padding">@dimen/external_half_margin</item>
+    </style>
+
+    <style name="EditTextFullExpand.VerticalExpand">
+    </style>
+
+    <style name="BottomButtonFullExpand">
+        <item name="android:background">@color/default_primary</item>
+        <item name="android:layout_height">@dimen/button_height</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="ImageButtonCreateProject">
+        <item name="android:padding">@dimen/external_half_half_margin</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/external_half_margin</item>
+        <item name="android:layout_marginRight">@dimen/external_half_margin</item>
+        <item name="android:layout_marginBottom">@dimen/external_half_margin</item>
+    </style>
+
+    <style name="TextViewBase">
+        <item name="android:background">@drawable/rounded_border_defaul_color</item>
+        <item name="android:textColor">@color/default_light</item>
+    </style>
+
+    <style name="TextViewBase.Padding">
+        <item name="android:paddingLeft">@dimen/external_margin</item>
+        <item name="android:paddingRight">@dimen/external_margin</item>
+        <item name="android:paddingTop">@dimen/external_half_margin</item>
+        <item name="android:paddingBottom">@dimen/external_half_margin</item>
+    </style>
+
+</resources>

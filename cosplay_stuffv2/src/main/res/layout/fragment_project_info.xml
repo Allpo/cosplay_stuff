@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/default_space_x2"
+    android:paddingBottom="@dimen/default_space_x2"
+    android:paddingLeft="@dimen/default_space_x3"
+    android:paddingRight="@dimen/default_space_x3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/info_title"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:clickable="true"
+            android:background="@null"
+            android:textSize="@dimen/abc_text_size_medium_material"
+            android:textColor="@color/white"
+            android:hint="@string/hint_project_name"
+            android:singleLine="true"
+            tools:text="Project name"/>
+
+        <EditText
+            android:id="@+id/info_character"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:clickable="true"
+            android:background="@null"
+            android:textSize="@dimen/abc_text_size_medium_material"
+            android:textColor="@color/white"
+            android:hint="@string/hint_character_name"
+            android:singleLine="true"
+            tools:text="Character name"/>
+
+        <EditText
+            android:id="@+id/info_serie"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:clickable="true"
+            android:background="@null"
+            android:textSize="@dimen/abc_text_size_medium_material"
+            android:textColor="@color/white"
+            android:hint="@string/hint_serie_name"
+            android:singleLine="true"
+            tools:text="Serie name"/>
+
+        <TextView
+            android:id="@+id/info_parts"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:layout_below="@id/info_character"
+            android:textSize="@dimen/abc_text_size_medium_material"
+            android:textColor="@color/white"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            tools:text="X% parts done"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

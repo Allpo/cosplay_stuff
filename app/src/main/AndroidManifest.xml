@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="allpo.cosplaystuff">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:name=".helpers.CSApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo_cs_v1"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:largeHeap="true">
+        <activity
+            android:name=".activities.home.HomeProjectListActivity"
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activities.project.ProjectActivity"
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"></activity>
+
+        <activity
+            android:name=".activities.gallery.GalleryActivity"
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"></activity>
+
+        <activity
+            android:name=".activities.checklist.CheckListActivity"
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"></activity>
+
+        <activity
+            android:name="com.example.android.listviewdragginganimation.ListViewDraggingAnimation"
+            android:windowSoftInputMode="adjustNothing"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name"></activity>
+
+    </application>
+
+</manifest>

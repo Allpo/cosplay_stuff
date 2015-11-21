@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/row_part"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/row_height">
+
+    <ImageView
+        android:id="@+id/row_part_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_reorder" />
+
+    <TextView
+        android:id="@+id/row_part_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/row_part_price_time"
+        android:layout_toRightOf="@+id/row_part_order"
+        tools:text="Cosplay paaaaaart"/>
+
+    <TextView
+        android:id="@+id/row_part_price_time"
+        android:layout_width="@dimen/row_part_price_time_size"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/default_space_x4"
+        tools:text="1200€"/>
+
+</RelativeLayout>

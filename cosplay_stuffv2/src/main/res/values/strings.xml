@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Cosplay Stuff</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Menu Home -->
+    <string name="menu_add_project">Add project</string>
+
+    <!-- fragments titles -->
+    <string name="fragment_title_info">Info</string>
+    <string name="fragment_title_ref">Ref</string>
+    <string name="fragment_title_wip">WIP</string>
+    <string name="fragment_title_part">Parts</string>
+    <string name="fragment_title_event">Events</string>
+    <string name="fragment_title_task">Tasks</string>
+
+    <!-- Project info Fragment -->
+    <string name="hint_project_name">Project name</string>
+    <string name="hint_serie_name">Serie name</string>
+    <string name="hint_character_name">Character name</string>
+
+    <!-- Picture picker Fragment -->
+    <string name="picture_picker_title">Get a picture</string>
+    <string name="picture_picker_gallery_title">Gallery</string>
+    <string name="picture_picker_camera_title">Camera</string>
+
+    <!-- Menu Gallery -->
+    <string name="menu_gallery_share_title">Share</string>
+
+    <!-- Dialog part -->
+    <string name="dialog_cosplay_part_title">Cosplay Part</string>
+    <string name="dialog_cosplay_part_title_hint">Title</string>
+    <string name="dialog_description_hint">Description</string>
+    <string name="dialog_part_save">Save</string>
+    <string name="dialog_part_dismiss">Dismiss</string>
+    <string name="dialog_part_delete">Delete</string>
+    <string name="dialog_craft">Craft</string>
+    <string name="dialog_buy">Buy</string>
+    <string name="dialog_hint_price">Price</string>
+    <string name="dialog_hint_time">Time</string>
+    <string name="dialog_currency_time">H</string>
+</resources>
